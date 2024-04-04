@@ -8,6 +8,7 @@ body{
   color: aliceblue;
 }
 .darkMode{
+  scale: 0.5;
   width: 100px;
   height: 60px;
 }
@@ -43,7 +44,7 @@ a{
   }
 }
 .downSlide{
-  animation: downSlide 1s ease-in-out;
+  animation: downSlide 1s ease;
 }
 @keyframes downSlide{
   from{
@@ -58,11 +59,12 @@ a{
   transition:0.5s ;
   display: block;
   width: 100%;
+  z-index: 999;
   height: 3px;
   background-color: blueviolet;
 }
 .sideSlide{
-  animation: side 0.8s ease-in-out;
+  animation: side 0.8s ease;
 }
 @keyframes side{
   from{
@@ -73,7 +75,7 @@ a{
   }
 }
 .rightSlide{
-  animation: right 1s ease-in-out;
+  animation: right 1s ease;
 }
 @keyframes right{
   from{
@@ -85,4 +87,10 @@ a{
 }
 body{
   overflow-x: hidden;
+}
+.link{
+  color: aliceblue;
+}
+li{
+  list-style: none;
 }

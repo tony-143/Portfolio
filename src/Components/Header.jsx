@@ -9,9 +9,9 @@ const Header = () => {
     return (
         <div style={{ zIndex: '999' }} className="bg-dark position-fixed w-100 pe-md-5 ">
             <div className='mx-xxl-5 bg-dark w-100 px-xxl-5 px-4 py-3 d-flex justify-content-between'>
-                <div className='d-flex gap-5'>
+                <div className='d-flex align-items-center gap-5'>
                     <h1>Tony</h1>
-                    <div style={{ cursor: 'pointer', scale: '0.5' }}
+                    <div style={{ cursor: 'pointer', scale: '0.4' }}
                         onClick={darkMode}
                         className=' position-relative border rounded-pill darkMode'>
                         <div className={`${on ? "end-0" : "start-0"} position-absolute insideDarkMode rounded-circle mt-1 bg-warning`}></div>
@@ -29,7 +29,7 @@ const Header = () => {
                     </button></a>
                 </div>
                 <div className='position-relative'>
-                    <button onClick={Menuon} className='btn d-md-none shadow text-light' data-toggle="drop-down">
+                    <button onClick={Menuon} className='btn mt-2 d-md-none shadow text-light' data-toggle="drop-down">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                     <div className={`${menu ? "d-inline" : "d-none"} bg-white border top-0 end-100 position-absolute rounded`}>
