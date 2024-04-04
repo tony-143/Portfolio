@@ -42,7 +42,7 @@ const Header = () => {
                         </ul>
 
                         <button className='btn btn-warning m-3 rounded-pill shadow'>
-                        <a href="#contact" className='text-dark'>  Contact</a>
+                            <a href="#contact" className='text-dark'>  Contact</a>
                         </button>
                     </div>
                 </div>
