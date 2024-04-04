@@ -11,11 +11,11 @@ const Header = () => {
             <div className='mx-xxl-5 bg-dark w-100 px-xxl-5 px-4 py-3 d-flex justify-content-between'>
                 <div className='d-flex align-items-center gap-5'>
                     <h1>Tony</h1>
-                    <div style={{ cursor: 'pointer', scale: '0.4' }}
-                        onClick={darkMode}
+                    {/* <div style={{ cursor: 'pointer', scale: '0.4' }}
+                        onClick={darkMode}  
                         className=' position-relative border rounded-pill darkMode'>
                         <div className={`${on ? "end-0" : "start-0"} position-absolute insideDarkMode rounded-circle mt-1 bg-warning`}></div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="list ms-auto d-none gap-5 d-md-flex align-items-center justify-content-between">
                     <ul className='list-inline mt-3'>
@@ -40,8 +40,9 @@ const Header = () => {
                             <a href="#portfolio"><li className="list-group-item my-1">Portfolio</li></a>
                             <a href="#about"><li className="list-group-item my-1">About    </li></a>
                         </ul>
+
                         <button className='btn btn-warning m-3 rounded-pill shadow'>
-                            Contact
+                        <a href="#contact" className='text-dark'>  Contact</a>
                         </button>
                     </div>
                 </div>
