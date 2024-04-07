@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
     let name =useRef()
     let email =useRef()
+    let comment=useRef()
     const sendEmail = (e) => {
         e.preventDefault();
         if(!name.current.value.trim()){
@@ -19,7 +20,9 @@ const Contact = () => {
           .then(
             () => {
                 alert("submited successfully Thank You!")
-              
+                name.current.value=""
+                email.current.value=""
+                comment.current.value=""
             },
             () => {
                 alert("failed to submit")
@@ -41,7 +44,7 @@ const Contact = () => {
                 <form onSubmit={sendEmail} ref={form} className="d-flex flex-column w-100 gap-5">
                     <input ref={name} name="user_name"  type="text" className='borderOrange rounded-pill px-3 py-3 ' placeholder='name' />
                     <input ref={email} type="email"  name="user_email"  className='borderOrange rounded-pill px-3 py-3' placeholder='email' />
-                    <textarea name="message"  placeholder='message' style={{borderRadius:'20px'}} className='px-3 borderOrange' id="" cols="30" rows="5"></textarea>
+                    <textarea ref={comment} name="message"  placeholder='message' style={{borderRadius:'20px'}} className='px-3 borderOrange' id="" cols="30" rows="5"></textarea>
                     <input type='submit' value="send" className='bg-warning fs-4 w-25 rounded-pill mx-auto p-2'/>
                 </form>
             </div>

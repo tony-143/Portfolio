@@ -7,7 +7,7 @@ import About from './About'
 const Home = () => {
     return (
         <>
-            <div id='home' className='mx-xxl-5 px-xxl-4 px-2'>
+            <div id='home' className='mx-xxl-5 position-relative px-xxl-4 px-2'>
                 <div className="row gap-5 py-md-5 ">
 
                     <div className="col-12  col-md-5">
@@ -47,7 +47,7 @@ const Home = () => {
                     </div>
                     <div className="col-12 d-none col-md-5 d-md-flex rightSlide justify-content-center align-items-center">
                         <div className="position-relative w-100 rightSlide ps-md-5 ms-md-5 mt-md-5 pt-md-5">
-                            <img className='img-fluid rounded-circle img-thumbnail' style={{ height: '100%', width: '100%' }} src={profile} alt="" />
+                            <img className='img-fluid shadow rounded-circle img-thumbnail' style={{ height: '100%', width: '100%' }} src={profile} alt="" />
                         </div>
                     </div>
                 </div>

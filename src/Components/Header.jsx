@@ -35,10 +35,10 @@ const Header = () => {
                     <div className={`${menu ? "d-inline" : "d-none"} bg-white border top-0 end-100 position-absolute rounded`}>
                         <div onClick={Menuon} className='position-absolute end-0 m-2'>❌</div>
                         <ul className='list-group '>
-                            <a href="#home"><li className="list-group-item my-1">Home     </li></a>
-                            <a href="#services"><li className="list-group-item my-1">Services </li></a>
-                            <a href="#portfolio"><li className="list-group-item my-1">Portfolio</li></a>
-                            <a href="#about"><li className="list-group-item my-1">About    </li></a>
+                            <a onClick={Menuon} href="#home"><li className="list-group-item my-1">Home     </li></a>
+                            <a onClick={Menuon} href="#services"><li className="list-group-item my-1">Services </li></a>
+                            <a onClick={Menuon} href="#portfolio"><li className="list-group-item my-1">Portfolio</li></a>
+                            <a onClick={Menuon} href="#about"><li className="list-group-item my-1">About    </li></a>
                         </ul>
 
                         <button className='btn btn-warning m-3 rounded-pill shadow'>

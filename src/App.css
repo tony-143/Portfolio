@@ -17,6 +17,21 @@ body{
   height: 50px;
   width: 50px;
 }
+
+
+/* .roboto-mono-<uniquifier> {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
 .hover{
   cursor: pointer;
   user-select: none;
