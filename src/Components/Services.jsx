@@ -31,7 +31,9 @@ const Services = () => {
             /><Cursor cursorStyle=' --'/>
           </span>
           </h1>
-        <a href="" className='btn  col-md-6 mt-4 mt-md-0 col-12 w-50 btn-warning p-2 rounded-pill px-4 fs-3' download={cv}>Download CV</a>
+        <a href={cv} 
+        className='btn col-md-6 mt-4 mt-md-0 col-12 w-50 btn-warning p-2 rounded-pill px-4 fs-3'
+         download>Download CV</a>
       </div>
     </div>
   )
